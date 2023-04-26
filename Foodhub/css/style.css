@@ -204,10 +204,12 @@ body {
 }
 .page__main-block {
 }
+.page__advantages {
+}
 /*--------------------Main-Block---------------------------*/
 
 .main-block {
-	padding: 0 0 160px 0;
+	padding: 0 0 80px 0;
 	position: relative;
 }
 
@@ -215,7 +217,7 @@ body {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 39%;
+	top: 64%;
 	width: 322px;
 	height: 240px;
 	background-image: url("../img/main-block/lemon-slice.png");
@@ -277,12 +279,11 @@ body {
 .main-block__image {
 	flex: 0 1 54.317%;
 	position: relative;
-	padding-bottom: 99.48%;
 }
 
 .main-block__image img{
 	object-fit: contain;
-	top: -23%;
+	top: -5%;
 }
 
 @media(max-width: 1074px) {
@@ -292,10 +293,90 @@ body {
 .main-block__container {
 	flex-direction: column-reverse;
 }
+.main-block__image {
+	padding-bottom: 99.48%;
+}
 .main-block__image img {
 	top: -8%;
 }
 .main-block__body {
 	padding: 30px;
+}
+}
+
+@media(max-width: 749px) {
+	.main-block {
+		padding: 0 0 30px 0;		
+  }
+  .main-block__title {
+	font-size: 60px;
+}
+}
+/*----------------------Advantages----------------------------*/
+
+.advantages {
+	padding: 80px 0 50px 0;
+}
+.advantages__container {
+}
+.advantages__items {
+	/* margin: 0 50px; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.advantages__item {
+	padding: 0 15px;
+	flex: 0 1 33.333%;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item-advantages {
+	position: relative;
+}
+.item-advantages__image {
+	position: absolute;
+	top: -25%;	
+}
+.item-advantages__body {
+	padding: 123px 47px 48px;
+	background-color: #3C3F4A;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 378px;
+}
+.item-advantages__text {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 128%;
+	color: #FFFFFE;
+}
+
+@media(max-width: 1250px) {
+	.item-advantages__body {
+		padding: 123px 25px 48px;		
+  }
+  .advantages__item:not(:last-child) {
+	margin: 0 0 100px 0;		
+}
+}
+
+ @media(max-width: 434px) {
+	.item-advantages__body  {
+		min-width: 300px;
+	}
+
+	.item-advantages__text {
+		text-align: center;
+  }
+  .item-advantages__text {
+	font-size: 33px;
+	line-height: 120%;
 }
 }
