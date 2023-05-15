@@ -469,7 +469,7 @@ body {
 }
 .serving__title {
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 58px;
 	line-height: 117%;
 	color: #FFFFFE;
 }
@@ -647,8 +647,8 @@ body {
 		margin-left: -181px;
   }  
   .offer__title:not(:last-child) {
-	margin: 0 auto 110px auto;
-	text-align: center;
+    margin: 0 auto 110px auto;
+    text-align: center;
 }
 }
 
@@ -671,7 +671,7 @@ body {
 		padding: 0 0 64px 0;
   }
 	.offer__title {		
-		font-size: 50px;		
+		font-size: 52px;		
   }
 	.offer__row {
 		margin: 0;
